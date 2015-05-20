@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>YapJobs</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<link href="css/yp-home.css" rel="stylesheet" type="text/css">
+<link href="css/yp-list.css" rel="stylesheet" type="text/css">
+<link href="css/yp-set.css" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+
+
+  </head>
+<body>
+<div class="yp-header">
+<div class="yp-header-left-btn">
+    	<a href="list.html"><div class="yp-header-left-btn-icon"><img src="images/yp-list-header-back-icon.png" width="13" height="22" alt=""></div></a>
+  </div>
+    <div class="yp-header-logo">
+    	<div class="yp-header-logo-icon"><img src="images/yp-home-yapjobs-logo.png"alt=""></div>
+    </div>
+    <div class="yp-header-next-btn">
+      
+    </div>
+    <div class="clearBoth"></div>
+</div>
+
+<div class="yp-search-setting-section">
+<div class="yp-search-setting-label">
+<div class="yp-search-setting-label-left" >Location</div><div class="yp-search-setting-label-right "></div>
+<div class="clearBoth"></div>
+</div>
+<div class="yp-search-setting-input"><input name="" type="text" value="Enter Location"></div>
+<div class="yp-search-setting-label">
+<div class="yp-search-setting-label-left" >Distance Within</div><div class="yp-search-setting-label-right ">20 Miles</div>
+<div class="clearBoth"></div>
+</div>
+<div id="slider1"  class="yp-search-setting-slider" ></div>
+<div class="yp-search-setting-label">
+<div class="yp-search-setting-label-left" >Hourly Rate</div><div class="yp-search-setting-label-right ">₤ 6.5</div>
+<div class="clearBoth"></div>
+</div>
+<div id="slider2"  class="yp-search-setting-slider" ></div>
+<div class="yp-search-setting-label">
+<div class="yp-search-setting-label-left" >Shift</div><div class="yp-search-setting-label-right"></div>
+<div class="clearBoth"></div>
+</div>
+<div class="btn-group" data-toggle="buttons" style="display:block;margin-bottom:20px;">
+  <label class="btn btn-primary active" style="width:25%">
+    <input type="radio" name="options" id="option1" autocomplete="off" checked> Any
+  </label>
+  <label class="btn btn-primary" style="width:25%">
+    <input type="radio" name="options" id="option2" autocomplete="off"> Day
+  </label>
+  <label class="btn btn-primary" style="width:25%">
+    <input type="radio" name="options" id="option3" autocomplete="off"> Evening
+  </label>
+    <label class="btn btn-primary" style="width:25%">
+    <input type="radio" name="options" id="option3" autocomplete="off"> Night
+  </label>
+  <div class="clearBoth"></div>
+</div>
+<div class="yp-search-setting-label">
+<div class="yp-search-setting-label-left" >Job Type</div><div class="yp-search-setting-label-right"></div>
+<div class="clearBoth"></div>
+</div>
+<div class="btn-group" data-toggle="buttons" style="display:block;margin-bottom:20px;">
+  <label class="btn btn-primary active" style="width:33%">
+    <input type="radio" name="options" id="option1" autocomplete="off" checked> Any
+  </label>
+  <label class="btn btn-primary" style="width:33%">
+    <input type="radio" name="options" id="option2" autocomplete="off"> Part Time
+  </label>
+  <label class="btn btn-primary" style="width:34%">
+    <input type="radio" name="options" id="option3" autocomplete="off"> Full Time
+  </label>
+  <div class="clearBoth"></div>
+
+</div>
+<div class="yp-search-setting-label">
+<div class="yp-search-setting-label-left" >Contract Type</div><div class="yp-search-setting-label-right"></div>
+<div class="clearBoth"></div>
+</div>
+<div class="btn-group" data-toggle="buttons" style="display:block; margin-bottom:20px;">
+  <label class="btn btn-primary active" style="width:33%">
+    <input type="radio" name="options" id="option1" autocomplete="off" checked> Any
+  </label>
+  <label class="btn btn-primary" style="width:33%">
+    <input type="radio" name="options" id="option2" autocomplete="off"> Permanent
+  </label>
+  <label class="btn btn-primary" style="width:34%">
+    <input type="radio" name="options" id="option3" autocomplete="off"> Temporary
+  </label>
+  <div class="clearBoth"></div>
+
+</div>
+<br>
+<a href="list.html"><div class="yp-search-setting-btn">Search Jobs</div></a>
+</div>
+<br><br>
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script>
+  $(function() {
+    $( "#slider1" ).slider();
+	$( "#slider2" ).slider();
+  });
+  </script>
+  
+  </body>
+</html>
